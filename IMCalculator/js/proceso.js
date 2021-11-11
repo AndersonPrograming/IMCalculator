@@ -9,19 +9,19 @@ function mostrar() {
 
      if (resultado < 18.5) {
           nivel = "Bajo de peso";
-          img = "<img src='img/bajo.jpg' width='320'>";
+          img = "<img src='img/bajo.jpg' width='100%' height='200px'>";
           //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 18.5 && resultado <= 24.9) {
           nivel = "Normal";
-          img = "<img src='img/normal.jpg' width='320'>";
+          img = "<img src='img/normal.jpg' width='100%' height='200px'>";
           //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 25.0 && resultado <= 29.9) {
           nivel = "Sobrepeso";
-          img = "<img src='img/sobrepeso.jpg' width='320'>";
+          img = "<img src='img/sobrepeso.jpg' width='100%' height='200px'>";
           //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 30.0) {
           nivel = "Obeso";
-          img ="<img src='img/obeso.jpg' width='320'>";
+          img ="<img src='img/obeso.jpg' width='100%' height='200px'>";
           //document.getElementById('info').innerHTML = ;
      }
 
