@@ -5,22 +5,33 @@ function mostrar() {
      let resultado = peso / (estatura * estatura);
      // redondeando a 1 decimal
      resultado = resultado.toFixed(1);
+     let img;
 
      if (resultado < 18.5) {
           nivel = "Bajo de peso";
+          img = "<img src='img/bajo.jpg' width='320'>";
+          //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 18.5 && resultado <= 24.9) {
           nivel = "Normal";
+          img = "<img src='img/normal.jpg' width='320'>";
+          //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 25.0 && resultado <= 29.9) {
           nivel = "Sobrepeso";
+          img = "<img src='img/sobrepeso.jpg' width='320'>";
+          //document.getElementById('info').innerHTML = ;
      } else if (resultado >= 30.0) {
           nivel = "Obeso";
+          img ="<img src='img/obeso.jpg' width='320'>";
+          //document.getElementById('info').innerHTML = ;
      }
 
      if (nombre && peso && estatura) {
           document.getElementById("saludo").innerHTML = "Welcome " + nombre + "! <br>";
-          document.getElementById("imc").innerHTML = "IMC: " + resultado + "<br>";
-          document.getElementById("nivel").innerHTML = "NIVEL PESO: " + nivel + "<br>";
+          document.getElementById("imc").innerHTML = "<b>IMC:</b> " + resultado + "<br>";
+          document.getElementById("nivel").innerHTML = "<b>NIVEL PESO:</b> " + nivel + "<br>";
+          document.getElementById('img').innerHTML = img;
      }
+
 }
 // funcion para resetear
 function vaciar() {
@@ -30,4 +41,5 @@ function vaciar() {
      document.getElementById("saludo").innerHTML = "";
      document.getElementById("imc").innerHTML = "";
      document.getElementById("nivel").innerHTML = "";
+     document.getElementById('img').innerHTML = "";
 }
