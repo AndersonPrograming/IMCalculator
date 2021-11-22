@@ -15,28 +15,39 @@
                <h1>IMCalculator</h1>
           </div>
           <div class="datos">
-               <div class="nombre">
-                    <label for="nombre">Ingresa tu nombre</label>
-                    <input type="text" id="nombre" placeholder="ejemplo: Pepito" required />
+               <div id="ingreso">
+                    <div class="nombre">
+                         <label for="nombre">Ingresa tu nombre</label>
+                         <input type="text" id="nombre" placeholder="ejemplo: Pepito" required />
+                    </div>
+                    <div class="peso">
+                         <label for="peso">Ingresa tu peso en kg</label>
+                         <input type="number" id="peso" placeholder="ejemplo: 70" required />
+                    </div>
+                    <div class="estatura">
+                         <label for="estatura">Ingresa tu estatura en metros</label>
+                         <input type="number" id="estatura" placeholder="ejemplo 1.80" required />
+                    </div>
+                    <div class="operacion">
+                         <input type="submit" class="calcular" value="calcular" onclick="mostrar()" />
+                         <input type="submit" class="vaciar" value="vaciar" onclick="vaciar()" />
+                    </div>
                </div>
-               <div class="peso">
-                    <label for="peso">Ingresa tu peso en kg</label>
-                    <input type="number" id="peso" placeholder="ejemplo: 70" required />
-               </div>
-               <div class="estatura">
-                    <label for="estatura">Ingresa tu estatura en metros</label>
-                    <input type="number" id="estatura" placeholder="ejemplo 1.80" required />
-               </div>
-               <div class="operacion">
-                    <input type="submit" class="calcular" value="calcular" onclick="mostrar()" />
-                    <input type="submit" class="vaciar" value="vaciar" onclick="vaciar()" />
-               </div>
+               
                <div class="resultado">
                     <center><span id="saludo"></span></center>
                     <span id="imc"></span>
                     <span id="nivel"></span>
                     <center><span id="img"></span></center>
+                    <center><span id="btn-info"></span></center>
                </div>
+               <div id="msg"></div>
+               <div id="titulo"></div>
+               <div id="uno"></div>
+               <div id="dos"></div>
+               <div id="tres"></div>
+               <div id="cuatro"></div>
+               <center><span id="btn-volver"></span></center>
           </div>
      </div>
      <script src="js/proceso.js"></script>

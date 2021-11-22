@@ -67,8 +67,6 @@ input[type="number"] {
   text-align: center;
 }
 .resultado {
-  background-color: rgba(255, 99, 71, 0.375);
-  padding: 10px;
   color: rgb(80, 78, 78);
   border-radius: 10px;
   margin-top: 10px;
@@ -78,5 +76,34 @@ input[type="number"] {
 }
 #img {
   opacity: .7;
-  he
+
+}
+hr{
+  border: 5px solid rgba(0, 0, 0, 0)
+}
+#btn-info>button{
+  background-color: rgb(79, 141, 202);
+  color: aliceblue;
+  border: none;
+  padding: 6px;
+  border-radius: 10px;
+}
+#btn-info>button:hover{
+   background-color:black;
+   transition: background-color 1.5s;
+}
+#btn-volver>button{
+  background-color: rgb(225, 37, 37);
+  color: aliceblue;
+  border: none;
+  padding: 6px;
+  border-radius: 10px;
+}
+#btn-volver>button:hover{
+    background-color: rgba(19, 17, 17, 0.837);
+    color: white;
+    transition: background-color 1.5s;
+}
+#msg{
+  color: rgb(54, 199, 93);
 }
