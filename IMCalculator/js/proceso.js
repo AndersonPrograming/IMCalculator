@@ -21,7 +21,7 @@ function mostrar() {
           fun = "sobrepeso()";
      } else if (resultado >= 30.0) {
           nivel = "Obeso";
-          img ="<img src='img/obeso.jpg' width='100%' height='200px'>";
+          img = "<img src='img/obeso.jpg' width='100%' height='200px'>";
           fun = "obeso()";
      }
 
@@ -30,7 +30,7 @@ function mostrar() {
           document.getElementById("imc").innerHTML = "<b>IMC:</b> " + resultado + "<br>";
           document.getElementById("nivel").innerHTML = "<b>NIVEL PESO:</b> " + nivel + "<br>";
           document.getElementById('img').innerHTML = img;
-          document.getElementById('btn-info').innerHTML = "<button onclick='"+fun+"'>mas informacion</button>";
+          document.getElementById('btn-info').innerHTML = "<button onclick='" + fun + "'>mas informacion</button>";
           document.getElementById('ingreso').innerHTML = "";
      }
 
@@ -41,7 +41,7 @@ function vaciar() {
      document.getElementById("peso").value = "";
      document.getElementById("estatura").value = "";
 }
-function bajo(){
+function bajo() {
      document.getElementById('btn-info').innerHTML = "";
 
      document.getElementById("titulo").innerHTML = "<b>Recomendaciones para ti:</b>";
@@ -49,7 +49,7 @@ function bajo(){
      document.getElementById("dos").innerHTML = "<hr><b>2.</b> Comer por lo menos 3 frutas por día y consumir grasas buenas";
      document.getElementById("tres").innerHTML = "<hr><b>3.</b> Beber por lo menos 2,5 L de agua por día";
      document.getElementById("cuatro").innerHTML = "<hr><b>4.</b> Realizar actividad física";
-     
+
      document.getElementById('btn-volver').innerHTML = "<hr><button onclick='location.reload()'>volver</button>";
 }
 function normal() {
