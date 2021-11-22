@@ -40,10 +40,6 @@ function vaciar() {
      document.getElementById("nombre").value = "";
      document.getElementById("peso").value = "";
      document.getElementById("estatura").value = "";
-     document.getElementById("saludo").innerHTML = "";
-     document.getElementById("imc").innerHTML = "";
-     document.getElementById("nivel").innerHTML = "";
-     document.getElementById('img').innerHTML = "";
 }
 function bajo(){
      document.getElementById('btn-info').innerHTML = "";
